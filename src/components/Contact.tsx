@@ -1,0 +1,104 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const Contact = () => {
+  return (
+    <section id="contact" className="py-20 bg-gradient-to-br from-accent/50 to-accent/20">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+            Ready to Get <span className="text-primary">Started</span>?
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Book your dog's first adventure today and see why Calgary pet owners trust us
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <Card className="shadow-soft">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-display font-semibold text-foreground">
+                Contact Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xl">📞</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Phone</h3>
+                  <p className="text-muted-foreground">(403) 555-BARK</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xl">✉️</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Email</h3>
+                  <p className="text-muted-foreground">hello@barkandrideyyc.com</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xl">📍</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Service Area</h3>
+                  <p className="text-muted-foreground">Calgary & Surrounding Areas</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xl">⏰</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Hours</h3>
+                  <p className="text-muted-foreground">7 AM - 7 PM, 7 Days a Week</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="shadow-soft">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-display font-semibold text-foreground">
+                Quick Booking
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🐕‍🦺</div>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Ready to give your dog the adventure they deserve?
+                </p>
+                
+                <div className="space-y-4">
+                  <Button variant="hero" size="lg" className="w-full text-lg py-6">
+                    📱 Call Now for Instant Booking
+                  </Button>
+                  <Button variant="outline" size="lg" className="w-full text-lg py-6">
+                    📧 Send Email Inquiry
+                  </Button>
+                </div>
+                
+                <div className="mt-6 p-4 bg-accent rounded-lg">
+                  <h4 className="font-semibold text-foreground mb-2">First Time Special!</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Mention this website for 20% off your first park adventure
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

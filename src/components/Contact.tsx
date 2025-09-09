@@ -67,19 +67,30 @@ const Contact = () => {
           <Card className="shadow-soft">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl font-display font-semibold text-foreground">
-                Quick Booking
+                Online Booking
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
                 <div className="text-6xl mb-4">🐕‍🦺</div>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Ready to give your dog the adventure they deserve?
+                  Book your dog's park adventure online - 24 hours advance booking required
                 </p>
                 
                 <div className="space-y-4">
-                  <Button variant="hero" size="lg" className="w-full text-lg py-6">
-                    📱 Call Now for Instant Booking
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full text-lg py-6"
+                    asChild
+                  >
+                    <a 
+                      href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      📅 Book Your Adventure Online
+                    </a>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full text-lg py-6">
                     📧 Send Email Inquiry

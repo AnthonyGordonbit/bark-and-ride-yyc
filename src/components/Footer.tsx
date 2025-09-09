@@ -13,7 +13,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-background/80 mb-4">
-              Calgary's premier dog park transportation service. Making tails wag since 2022.
+              Calgary's premier dog park transportation service. Making tails wag since 2025.
             </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors">
@@ -42,17 +42,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact Info</h4>
             <div className="space-y-3 text-background/80">
-              <p>📞 (403) 555-BARK</p>
-              <p>✉️ hello@barkandrideyyc.com</p>
+              <p>✉️ barkandrideyyc@gmail.com</p>
               <p>📍 Calgary, AB</p>
-              <p>⏰ 7 AM - 7 PM Daily</p>
+              <p>⏰ Mondays & Wednesdays at 12pm, Fridays at 9am</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 Bark & Ride YYC. All rights reserved. Made with ❤️ for Calgary's dogs.
+            © 2025 Bark & Ride YYC. All rights reserved. Made with ❤️ for Calgary's dogs.
           </p>
         </div>
       </div>

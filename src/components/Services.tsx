@@ -4,8 +4,8 @@ const Services = () => {
   const services = [
     {
       title: "Park Transportation",
-      description: "Safe, comfortable rides to Calgary's best dog parks",
-      features: ["Door-to-door service", "Experienced drivers", "GPS tracking", "Photo updates"],
+      description: "$35 per ride - Safe, comfortable 2-hour park adventures",
+      features: ["House pickup service", "Experienced drivers", "2-hour park visits", "$35 flat rate"],
       icon: "🚗"
     },
     {
@@ -15,9 +15,9 @@ const Services = () => {
       icon: "🎾"
     },
     {
-      title: "Flexible Scheduling",
-      description: "Book rides that fit your busy schedule",
-      features: ["Same-day booking", "Recurring schedules", "Emergency pickup", "Holiday service"],
+      title: "Advance Booking",
+      description: "Plan ahead for your dog's park adventures",
+      features: ["24-hour advance booking", "Recurring schedules", "Reliable scheduling", "Holiday service"],
       icon: "📅"
     }
   ];

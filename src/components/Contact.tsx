@@ -24,26 +24,16 @@ const Contact = () => {
             <CardContent className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">📞</span>
+                  <span className="text-white text-xl">✉️</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Phone</h3>
-                  <p className="text-muted-foreground">(403) 555-BARK</p>
+                  <h3 className="font-semibold text-foreground">Email</h3>
+                  <p className="text-muted-foreground">barkandrideyyc@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">✉️</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">Email</h3>
-                  <p className="text-muted-foreground">hello@barkandrideyyc.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                   <span className="text-white text-xl">📍</span>
                 </div>
                 <div>
@@ -53,12 +43,12 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                   <span className="text-white text-xl">⏰</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Hours</h3>
-                  <p className="text-muted-foreground">7 AM - 7 PM, 7 Days a Week</p>
+                  <h3 className="font-semibold text-foreground">Schedule</h3>
+                  <p className="text-muted-foreground">Mondays & Wednesdays at 12pm<br />Fridays at 9am</p>
                 </div>
               </div>
             </CardContent>

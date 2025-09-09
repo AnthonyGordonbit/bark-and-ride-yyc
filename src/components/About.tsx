@@ -31,15 +31,6 @@ const About = () => {
                   <p className="text-muted-foreground">Our team consists of certified dog enthusiasts</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-1">
-                  <span className="text-white text-sm">📱</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Real-Time Updates</h3>
-                  <p className="text-muted-foreground">Photos and updates throughout the adventure</p>
-                </div>
-              </div>
             </div>
           </div>
           
@@ -47,23 +38,11 @@ const About = () => {
             <div className="bg-gradient-orange rounded-3xl p-8 text-white">
               <div className="text-center">
                 <div className="text-6xl mb-4">🏆</div>
-                <h3 className="text-2xl font-display font-bold mb-4">Calgary's #1 Choice</h3>
-                <div className="grid grid-cols-2 gap-6 text-center">
+                <h3 className="text-2xl font-display font-bold mb-4">Ready to Start!</h3>
+                <div className="text-center">
                   <div>
-                    <div className="text-3xl font-bold">500+</div>
-                    <div className="text-sm opacity-90">Happy Dogs</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold">98%</div>
-                    <div className="text-sm opacity-90">Satisfaction Rate</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold">2+</div>
-                    <div className="text-sm opacity-90">Years Experience</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold">24/7</div>
-                    <div className="text-sm opacity-90">Support</div>
+                    <div className="text-3xl font-bold">NEW</div>
+                    <div className="text-sm opacity-90">Service Launching</div>
                   </div>
                 </div>
               </div>

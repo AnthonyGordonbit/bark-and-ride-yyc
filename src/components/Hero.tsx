@@ -30,6 +30,22 @@ const Hero = () => {
             take them to their favorite park, and bring them home happy and tired.
           </p>
           
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+              <a 
+                href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Book Your Dog's Adventure
+              </a>
+            </Button>
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="#services">
+                Learn More
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
       

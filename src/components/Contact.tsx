@@ -88,13 +88,6 @@ const Contact = () => {
                     </a>
                   </Button>
                 </div>
-                
-                <div className="mt-6 p-4 bg-accent rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">First Time Special!</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Mention this website for 20% off your first park adventure
-                  </p>
-                </div>
               </div>
             </CardContent>
           </Card>

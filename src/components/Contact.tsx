@@ -82,8 +82,10 @@ const Contact = () => {
                       📅 Book Your Adventure Online
                     </a>
                   </Button>
-                  <Button variant="outline" size="lg" className="w-full text-lg py-6">
-                    📧 Send Email Inquiry
+                  <Button variant="outline" size="lg" className="w-full text-lg py-6" asChild>
+                    <a href="mailto:barkandrideyyc@gmail.com">
+                      📧 Send Email Inquiry
+                    </a>
                   </Button>
                 </div>
                 

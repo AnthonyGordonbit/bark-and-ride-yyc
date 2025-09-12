@@ -25,8 +25,14 @@ const Header = () => {
           </a>
         </nav>
         
-        <Button variant="hero" size="lg">
-          Book Now
+        <Button variant="hero" size="lg" asChild>
+          <a 
+            href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Book Now
+          </a>
         </Button>
       </div>
     </header>

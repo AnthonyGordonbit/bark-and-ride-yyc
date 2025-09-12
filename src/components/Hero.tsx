@@ -30,14 +30,6 @@ const Hero = () => {
             take them to their favorite park, and bring them home happy and tired.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              Book Your Dog's Adventure
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              Learn More
-            </Button>
-          </div>
         </div>
       </div>
       

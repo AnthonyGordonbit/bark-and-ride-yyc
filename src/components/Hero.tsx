@@ -11,9 +11,8 @@ const Hero = () => {
         style={{ backgroundImage: `url(${dogBackground})` }}
       />
       
-      {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/85 to-secondary/30" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/95" />
+      {/* Subtle Left-to-Right Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/30" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -55,7 +54,7 @@ const Hero = () => {
               <img 
                 src={heroImage} 
                 alt="Bark and Ride - Professional Dog Transportation Service" 
-                className="w-full max-w-md h-auto object-contain rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/10 border border-white/20"
+                className="w-full max-w-md h-auto object-contain rounded-2xl shadow-2xl hover:shadow-warm transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/10 border border-white/20 drop-shadow-2xl"
               />
             </div>
           </div>

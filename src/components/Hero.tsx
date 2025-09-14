@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/bark-and-ride-logo.jpg";
-import dogBackground from "@/assets/gallery/dog-4.jpg";
+import dogBackground from "@/assets/hero-dog-park.jpg";
 
 const Hero = () => {
   return (

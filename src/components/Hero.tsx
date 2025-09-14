@@ -55,10 +55,9 @@ const Hero = () => {
               <img 
                 src={heroImage} 
                 alt="Bark and Ride - Professional Dog Transportation Service" 
-                className="relative w-full max-w-md h-auto object-contain rounded-2xl transition-all duration-300 hover:scale-105 bg-white/90 border-2 border-white/50 backdrop-blur-md"
+                className="relative w-full max-w-md h-auto object-contain rounded-2xl transition-all duration-300 hover:scale-105 bg-white/90 backdrop-blur-md"
                 style={{
-                  filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4))',
-                  boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.3)'
+                  filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4))'
                 }}
               />
             </div>

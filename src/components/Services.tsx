@@ -17,7 +17,7 @@ const Services = () => {
     {
       title: "Advance Booking",
       description: "Plan ahead for your dog's park adventures",
-      features: ["24-hour advance booking", "Recurring schedules", "Reliable scheduling", "Holiday service"],
+      features: ["24-hour advance booking", "Recurring schedules", "Reliable scheduling"],
       icon: "📅"
     }
   ];

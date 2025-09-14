@@ -16,15 +16,14 @@ const Footer = () => {
               Calgary's premier dog park transportation service. Making tails wag since 2025.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors">
-                <span className="text-white">📘</span>
-              </div>
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors">
+              <a 
+                href="https://www.instagram.com/bark_and_ride_calgary" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors"
+              >
                 <span className="text-white">📷</span>
-              </div>
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors">
-                <span className="text-white">🐦</span>
-              </div>
+              </a>
             </div>
           </div>
           

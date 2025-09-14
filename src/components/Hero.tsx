@@ -3,20 +3,13 @@ import heroImage from "@/assets/bark-and-ride-logo.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-        }}
-      />
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/95" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="max-w-2xl">
           <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
             Your Dog's 
             <span className="block text-transparent bg-gradient-hero bg-clip-text">
@@ -45,6 +38,16 @@ const Hero = () => {
                 Learn More
               </a>
             </Button>
+          </div>
+          </div>
+          
+          {/* Logo */}
+          <div className="flex justify-center lg:justify-end">
+            <img 
+              src={heroImage} 
+              alt="Bark and Ride - Professional Dog Transportation Service" 
+              className="w-full max-w-md h-auto object-contain"
+            />
           </div>
         </div>
       </div>

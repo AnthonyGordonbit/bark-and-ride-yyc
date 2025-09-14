@@ -48,13 +48,18 @@ const Hero = () => {
           </div>
           </div>
           
-          {/* Logo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
+              {/* Enhanced shadow backdrop */}
+              <div className="absolute inset-0 bg-black/20 rounded-2xl blur-xl transform translate-x-2 translate-y-2"></div>
               <img 
                 src={heroImage} 
                 alt="Bark and Ride - Professional Dog Transportation Service" 
-                className="w-full max-w-md h-auto object-contain rounded-2xl shadow-2xl hover:shadow-warm transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/10 border border-white/20 drop-shadow-2xl"
+                className="relative w-full max-w-md h-auto object-contain rounded-2xl transition-all duration-300 hover:scale-105 bg-white/90 border-2 border-white/50 backdrop-blur-md"
+                style={{
+                  filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4))',
+                  boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.3)'
+                }}
               />
             </div>
           </div>

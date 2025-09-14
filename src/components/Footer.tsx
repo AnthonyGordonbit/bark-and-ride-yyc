@@ -1,3 +1,5 @@
+import { Dog, Instagram, Mail, MapPin, Clock } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
@@ -6,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">🐕</span>
+                <Dog className="w-5 h-5 text-white" />
               </div>
               <h3 className="text-2xl font-display font-bold">
                 Bark & Ride <span className="text-primary">YYC</span>
@@ -22,7 +24,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors"
               >
-                <span className="text-white">📷</span>
+                <Instagram className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -41,9 +43,18 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact Info</h4>
             <div className="space-y-3 text-background/80">
-              <p>✉️ barkandrideyyc@gmail.com</p>
-              <p>📍 Calgary, AB</p>
-              <p>⏰ Mondays & Wednesdays at 12pm, Fridays at 9am</p>
+              <div className="flex items-center space-x-2">
+                <Mail className="w-4 h-4" />
+                <p>barkandrideyyc@gmail.com</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4" />
+                <p>Calgary, AB</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4" />
+                <p>Mondays & Wednesdays at 12pm, Fridays at 9am</p>
+              </div>
             </div>
           </div>
         </div>

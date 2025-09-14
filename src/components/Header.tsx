@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Dog } from "lucide-react";
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-gradient-orange rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-lg">🐕</span>
+            <Dog className="w-5 h-5 text-white" />
           </div>
           <h1 className="text-2xl font-display font-bold text-foreground">
             Bark & Ride <span className="text-primary">YYC</span>

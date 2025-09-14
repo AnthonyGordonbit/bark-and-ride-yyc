@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Car, Target, Calendar, Check } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -6,19 +7,19 @@ const Services = () => {
       title: "Park Transportation",
       description: "$35 per ride - Safe, comfortable 2-hour park adventures",
       features: ["House pickup service", "Experienced drivers", "2-hour park visits", "$35 flat rate"],
-      icon: "🚗"
+      icon: Car
     },
     {
       title: "Supervised Playtime",
       description: "Professional supervision during park visits",
       features: ["Trained supervisors", "Small group sizes", "Social interaction", "Exercise monitoring"],
-      icon: "🎾"
+      icon: Target
     },
     {
       title: "Advance Booking",
       description: "Plan ahead for your dog's park adventures",
       features: ["24-hour advance booking", "Recurring schedules", "Reliable scheduling"],
-      icon: "📅"
+      icon: Calendar
     }
   ];
 
@@ -38,8 +39,8 @@ const Services = () => {
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-warm transition-all duration-300 hover:-translate-y-2">
               <CardHeader className="text-center pb-4">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="w-8 h-8 text-primary" />
                 </div>
                 <CardTitle className="text-2xl font-display font-semibold text-foreground">
                   {service.title}
@@ -52,7 +53,7 @@ const Services = () => {
                 <ul className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-foreground">
-                      <span className="text-primary mr-3">✓</span>
+                      <Check className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}

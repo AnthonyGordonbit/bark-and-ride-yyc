@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Mail, MapPin, Clock, Calendar, Send, Heart } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -24,7 +25,7 @@ const Contact = () => {
             <CardContent className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">✉️</span>
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Email</h3>
@@ -34,7 +35,7 @@ const Contact = () => {
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">📍</span>
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Service Area</h3>
@@ -44,7 +45,7 @@ const Contact = () => {
               
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-white text-xl">⏰</span>
+                  <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Schedule</h3>
@@ -62,7 +63,9 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
-                <div className="text-6xl mb-4">🐕‍🦺</div>
+                <div className="w-20 h-20 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Heart className="w-10 h-10 text-primary" />
+                </div>
                 <p className="text-lg text-muted-foreground mb-6">
                   Book your dog's park adventure online - 24 hours advance booking required
                 </p>
@@ -79,12 +82,14 @@ const Contact = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      📅 Book Your Adventure Online
+                      <Calendar className="w-5 h-5 mr-2" />
+                      Book Your Adventure Online
                     </a>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full text-lg py-6" asChild>
                     <a href="mailto:barkandrideyyc@gmail.com">
-                      📧 Send Email Inquiry
+                      <Send className="w-5 h-5 mr-2" />
+                      Send Email Inquiry
                     </a>
                   </Button>
                 </div>

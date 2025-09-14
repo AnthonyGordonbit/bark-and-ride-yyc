@@ -1,11 +1,19 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/bark-and-ride-logo.jpg";
+import dogBackground from "@/assets/gallery/dog-4.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/95" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${dogBackground})` }}
+      />
+      
+      {/* Gradient Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/85 to-secondary/30" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/95" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -43,11 +51,13 @@ const Hero = () => {
           
           {/* Logo */}
           <div className="flex justify-center lg:justify-end">
-            <img 
-              src={heroImage} 
-              alt="Bark and Ride - Professional Dog Transportation Service" 
-              className="w-full max-w-md h-auto object-contain rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105"
-            />
+            <div className="relative">
+              <img 
+                src={heroImage} 
+                alt="Bark and Ride - Professional Dog Transportation Service" 
+                className="w-full max-w-md h-auto object-contain rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/10 border border-white/20"
+              />
+            </div>
           </div>
         </div>
       </div>

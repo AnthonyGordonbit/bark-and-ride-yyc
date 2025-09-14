@@ -46,7 +46,7 @@ const Hero = () => {
             <img 
               src={heroImage} 
               alt="Bark and Ride - Professional Dog Transportation Service" 
-              className="w-full max-w-md h-auto object-contain"
+              className="w-full max-w-md h-auto object-contain rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105"
             />
           </div>
         </div>

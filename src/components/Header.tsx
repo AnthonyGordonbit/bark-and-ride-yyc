@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoImage from "@/assets/bark-and-ride-logo.jpg";
+import logoImage from "@/assets/bark-and-ride-new-logo.png";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
           <img 
             src={logoImage} 
             alt="Bark and Ride YYC Logo" 
-            className="w-8 h-8 rounded-full object-cover"
+            className="w-10 h-10 object-contain"
           />
           <h1 className="text-2xl font-display font-bold text-foreground">
             Bark & Ride <span className="text-primary">YYC</span>

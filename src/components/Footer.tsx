@@ -1,4 +1,5 @@
-import { Dog, Instagram, Mail, MapPin, Clock } from "lucide-react";
+import { Instagram, Mail, MapPin, Clock } from "lucide-react";
+import logoImage from "@/assets/bark-and-ride-new-logo.png";
 
 const Footer = () => {
   return (
@@ -7,9 +8,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <Dog className="w-5 h-5 text-white" />
-              </div>
+              <img 
+                src={logoImage} 
+                alt="Bark and Ride YYC Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <h3 className="text-2xl font-display font-bold">
                 Bark & Ride <span className="text-primary">YYC</span>
               </h3>

@@ -14,7 +14,7 @@ const About = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-1">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-1" aria-hidden="true">
                   <span className="text-white text-sm">🛡️</span>
                 </div>
                 <div>
@@ -23,7 +23,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mt-1">
+                <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mt-1" aria-hidden="true">
                   <span className="text-white text-sm">❤️</span>
                 </div>
                 <div>
@@ -37,7 +37,7 @@ const About = () => {
           <div className="relative">
             <div className="bg-gradient-orange rounded-3xl p-8 text-white">
               <div className="text-center">
-                <div className="text-6xl mb-4">🏆</div>
+                <div className="text-6xl mb-4" aria-hidden="true">🏆</div>
                 <h3 className="text-2xl font-display font-bold mb-4">Ready to Start!</h3>
                 <div className="text-center">
                   <div>

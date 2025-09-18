@@ -25,7 +25,8 @@ const Footer = () => {
                 href="https://www.instagram.com/bark_and_ride_calgary" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors"
+                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                aria-label="Follow us on Instagram (opens in new tab)"
               >
                 <Instagram className="w-5 h-5 text-white" />
               </a>

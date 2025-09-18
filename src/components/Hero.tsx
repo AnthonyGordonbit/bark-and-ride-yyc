@@ -36,6 +36,7 @@ const Hero = () => {
                 href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Book your dog's adventure (opens in new tab)"
               >
                 Book Your Dog's Adventure
               </a>

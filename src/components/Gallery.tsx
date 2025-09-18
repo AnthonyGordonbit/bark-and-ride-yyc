@@ -11,7 +11,7 @@ import dog8 from "@/assets/gallery/dog-8.jpg";
 import team from "@/assets/gallery/team.jpg";
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ src: string, alt: string } | null>(null);
 
   const images = [
     { src: dog1, alt: "Golden retriever running happily at the dog park" },
@@ -42,7 +42,16 @@ const Gallery = () => {
             <div
               key={index}
               className="group cursor-pointer overflow-hidden rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:-translate-y-2"
-              onClick={() => setSelectedImage(image.src)}
+              onClick={() => setSelectedImage(image)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedImage(image);
+                }
+              }}
+              tabIndex={0}
+              role="button"
+              aria-label={`View enlarged ${image.alt}`}
             >
               <img
                 src={image.src}
@@ -59,17 +68,21 @@ const Gallery = () => {
         <div 
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Enlarged image view"
         >
           <div className="relative max-w-4xl max-h-full">
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-primary transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
+              aria-label="Close enlarged image"
             >
               <X className="w-8 h-8" />
             </button>
             <img
-              src={selectedImage}
-              alt="Enlarged view"
+              src={selectedImage.src}
+              alt={selectedImage.alt}
               className="max-w-full max-h-full object-contain rounded-lg"
             />
           </div>

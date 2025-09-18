@@ -81,13 +81,14 @@ const Contact = () => {
                       href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
                       target="_blank" 
                       rel="noopener noreferrer"
+                      aria-label="Book your adventure online (opens in new tab)"
                     >
                       <Calendar className="w-5 h-5 mr-2" />
                       Book Your Adventure Online
                     </a>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full text-lg py-6" asChild>
-                    <a href="mailto:barkandrideyyc@gmail.com">
+                    <a href="mailto:barkandrideyyc@gmail.com" aria-label="Send email inquiry to Bark and Ride YYC">
                       <Send className="w-5 h-5 mr-2" />
                       Send Email Inquiry
                     </a>

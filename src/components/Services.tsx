@@ -12,7 +12,7 @@ const Services = () => {
     {
       title: "Supervised Playtime",
       description: "Professional supervision during park visits",
-      features: ["Trained supervisors", "Small group sizes", "Social interaction", "Exercise monitoring"],
+      features: ["Small groups (max 4 dogs)", "Social interaction", "Exercise monitoring"],
       icon: Target
     },
     {

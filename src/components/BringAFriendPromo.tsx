@@ -44,9 +44,14 @@ const BringAFriendPromo = () => {
                 </div>
                 
                 <div className="pt-4">
-                  <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                  <a 
+                    href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  >
                     Book Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

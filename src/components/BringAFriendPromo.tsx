@@ -8,13 +8,13 @@ const BringAFriendPromo = () => {
         <Card className="overflow-hidden border-2 border-primary/20 shadow-xl bg-gradient-to-r from-background to-secondary/5">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Image Section */}
-            <div className="relative h-64 md:h-full min-h-[300px] overflow-hidden">
+            <div className="relative h-64 md:h-full min-h-[300px] overflow-hidden bg-muted/10 flex items-center justify-center">
               <img 
                 src={bringAFriendImage} 
                 alt="Two happy dogs playing together during Bring a Friend Friday special promotion"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
             </div>
             
             {/* Content Section */}

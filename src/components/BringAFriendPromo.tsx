@@ -8,7 +8,7 @@ const BringAFriendPromo = () => {
         <Card className="overflow-hidden border-2 border-primary/20 shadow-xl bg-gradient-to-r from-background to-secondary/5">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Image Section */}
-            <div className="relative h-64 md:h-full min-h-[300px] overflow-hidden flex items-center justify-center rounded-lg">
+            <div className="relative h-64 md:h-full min-h-[300px] overflow-hidden flex items-center justify-center rounded-lg p-6">
               <img 
                 src={bringAFriendImage} 
                 alt="Two happy dogs playing together during Bring a Friend Friday special promotion"

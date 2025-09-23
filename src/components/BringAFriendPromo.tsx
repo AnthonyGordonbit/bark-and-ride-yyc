@@ -12,7 +12,7 @@ const BringAFriendPromo = () => {
               <img 
                 src={bringAFriendImage} 
                 alt="Two happy dogs playing together during Bring a Friend Friday special promotion"
-                className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
+                className="w-full h-full object-contain transition-transform duration-500 hover:scale-105 rounded-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
             </div>

@@ -157,9 +157,9 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Owner Reviews */}
-          <div>
+          <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <User className="w-5 h-5 text-primary-foreground" />

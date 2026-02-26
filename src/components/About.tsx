@@ -14,15 +14,6 @@ const About = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mt-1" aria-hidden="true">
-                  <span className="text-white text-sm">🛡️</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Licensed & Insured</h3>
-                  <p className="text-muted-foreground">Full commercial insurance and bonded drivers</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mt-1" aria-hidden="true">
                   <span className="text-white text-sm">❤️</span>
                 </div>

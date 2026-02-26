@@ -157,9 +157,9 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
           {/* Owner Reviews */}
-          <div>
+          <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <User className="w-5 h-5 text-primary-foreground" />
@@ -173,7 +173,7 @@ const Reviews = () => {
                 <p className="text-muted-foreground italic">No owner reviews yet — be the first!</p>
               )}
             </div>
-            <Card className="shadow-soft border-primary/20">
+            <Card className="shadow-soft border-primary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Review</CardTitle>
               </CardHeader>
@@ -184,7 +184,7 @@ const Reviews = () => {
           </div>
 
           {/* Dog Reviews */}
-          <div>
+          <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
                 <Dog className="w-5 h-5 text-secondary-foreground" />
@@ -198,7 +198,7 @@ const Reviews = () => {
                 <p className="text-muted-foreground italic">No dog reviews yet — let your pup speak! 🐾</p>
               )}
             </div>
-            <Card className="shadow-soft border-secondary/20">
+            <Card className="shadow-soft border-secondary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Dog Review 🐶</CardTitle>
               </CardHeader>

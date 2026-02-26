@@ -173,7 +173,7 @@ const Reviews = () => {
                 <p className="text-muted-foreground italic">No owner reviews yet — be the first!</p>
               )}
             </div>
-            <Card className="shadow-soft border-primary/20">
+            <Card className="shadow-soft border-primary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Review</CardTitle>
               </CardHeader>

@@ -198,7 +198,7 @@ const Reviews = () => {
                 <p className="text-muted-foreground italic">No dog reviews yet — let your pup speak! 🐾</p>
               )}
             </div>
-            <Card className="shadow-soft border-secondary/20">
+            <Card className="shadow-soft border-secondary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Dog Review 🐶</CardTitle>
               </CardHeader>

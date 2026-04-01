@@ -1,34 +1,29 @@
 import { useState } from "react";
-import { X } from "lucide-react";
-import dog1 from "@/assets/gallery/dog-1.jpg";
-import dog2 from "@/assets/gallery/dog-2.jpg";
-import dog3 from "@/assets/gallery/dog-3.jpg";
-import dog4 from "@/assets/gallery/dog-4.jpg";
-import dog5 from "@/assets/gallery/dog-5.jpg";
-import dog6 from "@/assets/gallery/dog-6.jpg";
-import dog7 from "@/assets/gallery/dog-7.jpg";
-import dog8 from "@/assets/gallery/dog-8.jpg";
-import team from "@/assets/gallery/team.jpg";
+import { X, Camera } from "lucide-react";
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<{ src: string, alt: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
 
   const images = [
-    { src: dog1, alt: "Golden retriever running happily at the dog park" },
-    { src: dog2, alt: "Happy golden retriever with tongue out enjoying park time" },
-    { src: dog3, alt: "Multiple dogs playing together at the park" },
-    { src: dog4, alt: "Dogs running and playing in the outdoor area" },
-    { src: dog5, alt: "Dog supervisor with multiple dogs during park visit" },
-    { src: team, alt: "Our dedicated Bark & Ride team members" },
-    { src: dog6, alt: "Small dog enjoying supervised playtime" },
-    { src: dog7, alt: "Dog relaxing during park adventure" },
-    { src: dog8, alt: "Dogs playing and socializing together" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-background">
+    <section id="gallery" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <Camera className="w-4 h-4" />
+            Photo Gallery
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             Happy <span className="text-primary">Tails</span>
           </h2>
@@ -36,15 +31,15 @@ const Gallery = () => {
             See the joy and excitement of our furry friends during their park adventures
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
           {images.map((image, index) => (
             <div
               key={index}
-              className="group cursor-pointer overflow-hidden rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 hover:-translate-y-2"
+              className="group cursor-pointer overflow-hidden rounded-xl border border-border/50 bg-muted/50 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 aspect-square"
               onClick={() => setSelectedImage(image)}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
+                if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
                   setSelectedImage(image);
                 }
@@ -56,16 +51,15 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           ))}
         </div>
       </div>
 
-      {/* Modal for enlarged image */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedImage(null)}
           role="dialog"

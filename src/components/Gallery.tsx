@@ -1,19 +1,29 @@
 import { useState } from "react";
 import { X, Camera } from "lucide-react";
 
+import dog1 from "@/assets/gallery/dog-1.jpg";
+import dog2 from "@/assets/gallery/dog-2.jpg";
+import dog3 from "@/assets/gallery/dog-3.jpg";
+import dog4 from "@/assets/gallery/dog-4.jpg";
+import dog5 from "@/assets/gallery/dog-5.jpg";
+import dog6 from "@/assets/gallery/dog-6.jpg";
+import dog7 from "@/assets/gallery/dog-7.jpg";
+import dog8 from "@/assets/gallery/dog-8.jpg";
+import team from "@/assets/gallery/team.jpg";
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
 
   const images = [
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
-    { src: "/placeholder.svg", alt: "Dog photo coming soon" },
+    { src: dog1, alt: "Happy dog at the park" },
+    { src: dog2, alt: "Dog enjoying a ride" },
+    { src: dog3, alt: "Playful pup adventure" },
+    { src: dog4, alt: "Furry friend having fun" },
+    { src: dog5, alt: "Dog park playtime" },
+    { src: dog6, alt: "Tail-wagging good time" },
+    { src: dog7, alt: "Happy pup on the go" },
+    { src: dog8, alt: "Dog loving the outdoors" },
+    { src: team, alt: "Our amazing team" },
   ];
 
   return (

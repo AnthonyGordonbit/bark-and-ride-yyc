@@ -169,19 +169,12 @@ const Reviews = () => {
               </div>
               <h3 className="text-2xl font-display font-semibold text-foreground">Dog Reviews</h3>
             </div>
-            <div className="space-y-4 mb-8">
-              {dogReviews.length > 0 ? (
-                dogReviews.map((r) => <ReviewCard key={r.id} review={r} />)
-              ) : (
-                <p className="text-muted-foreground italic">No dog reviews yet — let your pup speak! 🐾</p>
-              )}
-            </div>
             <Card className="shadow-soft border-secondary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Dog Review 🐶</CardTitle>
               </CardHeader>
               <CardContent>
-                <ReviewForm type="dog" onSubmitted={fetchReviews} />
+                <ReviewForm type="dog" onSubmitted={handleSubmitted} />
               </CardContent>
             </Card>
           </div>

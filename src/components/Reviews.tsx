@@ -135,10 +135,10 @@ const Reviews = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-            What They're <span className="text-primary">Saying</span>
+            Leave Us a <span className="text-primary">Review</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Hear from our happy owners and their four-legged adventurers
+            We'd love to hear about your experience — your feedback helps us keep tails wagging! 🐾
           </p>
         </div>
 

@@ -126,24 +126,9 @@ const ReviewForm = ({ type, onSubmitted }: { type: "owner" | "dog"; onSubmitted:
 };
 
 const Reviews = () => {
-  const [ownerReviews, setOwnerReviews] = useState<Review[]>([]);
-  const [dogReviews, setDogReviews] = useState<Review[]>([]);
-
-  const fetchReviews = async () => {
-    const { data } = await supabase
-      .from("reviews")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (data) {
-      setOwnerReviews(data.filter((r: Review) => r.reviewer_type === "owner"));
-      setDogReviews(data.filter((r: Review) => r.reviewer_type === "dog"));
-    }
+  const handleSubmitted = () => {
+    // Review saved and emailed, no need to display
   };
-
-  useEffect(() => {
-    fetchReviews();
-  }, []);
 
   return (
     <section id="reviews" className="py-20 bg-gradient-to-br from-muted/50 to-background">
@@ -166,19 +151,12 @@ const Reviews = () => {
               </div>
               <h3 className="text-2xl font-display font-semibold text-foreground">Owner Reviews</h3>
             </div>
-            <div className="space-y-4 mb-8">
-              {ownerReviews.length > 0 ? (
-                ownerReviews.map((r) => <ReviewCard key={r.id} review={r} />)
-              ) : (
-                <p className="text-muted-foreground italic">No owner reviews yet — be the first!</p>
-              )}
-            </div>
             <Card className="shadow-soft border-primary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Review</CardTitle>
               </CardHeader>
               <CardContent>
-                <ReviewForm type="owner" onSubmitted={fetchReviews} />
+                <ReviewForm type="owner" onSubmitted={handleSubmitted} />
               </CardContent>
             </Card>
           </div>
@@ -191,19 +169,12 @@ const Reviews = () => {
               </div>
               <h3 className="text-2xl font-display font-semibold text-foreground">Dog Reviews</h3>
             </div>
-            <div className="space-y-4 mb-8">
-              {dogReviews.length > 0 ? (
-                dogReviews.map((r) => <ReviewCard key={r.id} review={r} />)
-              ) : (
-                <p className="text-muted-foreground italic">No dog reviews yet — let your pup speak! 🐾</p>
-              )}
-            </div>
             <Card className="shadow-soft border-secondary/20 flex-1 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-display">Leave a Dog Review 🐶</CardTitle>
               </CardHeader>
               <CardContent>
-                <ReviewForm type="dog" onSubmitted={fetchReviews} />
+                <ReviewForm type="dog" onSubmitted={handleSubmitted} />
               </CardContent>
             </Card>
           </div>

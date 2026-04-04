@@ -126,24 +126,9 @@ const ReviewForm = ({ type, onSubmitted }: { type: "owner" | "dog"; onSubmitted:
 };
 
 const Reviews = () => {
-  const [ownerReviews, setOwnerReviews] = useState<Review[]>([]);
-  const [dogReviews, setDogReviews] = useState<Review[]>([]);
-
-  const fetchReviews = async () => {
-    const { data } = await supabase
-      .from("reviews")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (data) {
-      setOwnerReviews(data.filter((r: Review) => r.reviewer_type === "owner"));
-      setDogReviews(data.filter((r: Review) => r.reviewer_type === "dog"));
-    }
+  const handleSubmitted = () => {
+    // Review saved and emailed, no need to display
   };
-
-  useEffect(() => {
-    fetchReviews();
-  }, []);
 
   return (
     <section id="reviews" className="py-20 bg-gradient-to-br from-muted/50 to-background">

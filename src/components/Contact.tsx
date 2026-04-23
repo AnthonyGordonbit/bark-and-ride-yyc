@@ -57,7 +57,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-foreground mb-3 text-center">Follow Us</h3>
                 <div className="flex items-center justify-center space-x-4">
                   <a
-                    href="https://www.instagram.com/bark_and_ride_calgary"
+                    href="https://www.instagram.com/bark_and_ride_calgary/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"

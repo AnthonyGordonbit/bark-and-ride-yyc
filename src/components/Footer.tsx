@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, Clock } from "lucide-react";
+import { Instagram, Facebook, Mail, MapPin, Clock } from "lucide-react";
 import logoImage from "@/assets/bark-and-ride-new-logo.png";
 
 const Footer = () => {
@@ -29,6 +29,15 @@ const Footer = () => {
                 aria-label="Follow us on Instagram (opens in new tab)"
               >
                 <Instagram className="w-5 h-5 text-white" />
+              </a>
+              <a 
+                href="https://www.facebook.com/bark.and.ride.calgary" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary-hover transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                aria-label="Follow us on Facebook (opens in new tab)"
+              >
+                <Facebook className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>

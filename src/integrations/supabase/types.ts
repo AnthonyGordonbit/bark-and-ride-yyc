@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       reviews: {
         Row: {
+          approved: boolean
           created_at: string
           dog_name: string | null
           id: string
@@ -25,6 +26,7 @@ export type Database = {
           reviewer_type: string
         }
         Insert: {
+          approved?: boolean
           created_at?: string
           dog_name?: string | null
           id?: string
@@ -34,6 +36,7 @@ export type Database = {
           reviewer_type: string
         }
         Update: {
+          approved?: boolean
           created_at?: string
           dog_name?: string | null
           id?: string

@@ -51,7 +51,7 @@ const Header = () => {
         <div className="hidden md:block">
           <div className="flex items-center space-x-3">
             <a
-              href="https://www.instagram.com/bark_and_ride_calgary"
+              href="https://www.instagram.com/bark_and_ride_calgary/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-1"
@@ -132,7 +132,7 @@ const Header = () => {
             </Button>
             <div className="flex items-center justify-center space-x-6 pt-2">
               <a
-                href="https://www.instagram.com/bark_and_ride_calgary"
+                href="https://www.instagram.com/bark_and_ride_calgary/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-2"

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, MapPin, Clock, Calendar, Send, Heart } from "lucide-react";
+import { Mail, MapPin, Clock, Calendar, Send, Heart, Instagram, Facebook } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -50,6 +50,30 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground">Schedule</h3>
                   <p className="text-muted-foreground">Mondays & Wednesdays at 12pm<br />Fridays at 9am</p>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <h3 className="font-semibold text-foreground mb-3 text-center">Follow Us</h3>
+                <div className="flex items-center justify-center space-x-4">
+                  <a
+                    href="https://www.instagram.com/bark_and_ride_calgary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    aria-label="Follow us on Instagram (opens in new tab)"
+                  >
+                    <Instagram className="w-6 h-6 text-white" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/bark.and.ride.calgary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    aria-label="Follow us on Facebook (opens in new tab)"
+                  >
+                    <Facebook className="w-6 h-6 text-white" />
+                  </a>
                 </div>
               </div>
             </CardContent>

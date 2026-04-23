@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 import logoImage from "@/assets/bark-and-ride-new-logo.png";
 
@@ -49,7 +49,26 @@ const Header = () => {
         
         {/* Desktop Book Now Button */}
         <div className="hidden md:block">
-          <Button variant="hero" size="lg" asChild>
+          <div className="flex items-center space-x-3">
+            <a
+              href="https://www.instagram.com/bark_and_ride_calgary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-1"
+              aria-label="Follow us on Instagram (opens in new tab)"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/bark.and.ride.calgary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-1"
+              aria-label="Follow us on Facebook (opens in new tab)"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+            <Button variant="hero" size="lg" asChild>
             <a 
               href="https://cal.com/barkandrideyyc/dog-1?user=barkandrideyyc&overlayCalendar=true" 
               target="_blank" 
@@ -58,7 +77,8 @@ const Header = () => {
             >
               Book Now
             </a>
-          </Button>
+            </Button>
+          </div>
         </div>
       </div>
       
@@ -110,6 +130,28 @@ const Header = () => {
                 Book Now
               </a>
             </Button>
+            <div className="flex items-center justify-center space-x-6 pt-2">
+              <a
+                href="https://www.instagram.com/bark_and_ride_calgary"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-2"
+                aria-label="Follow us on Instagram (opens in new tab)"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.facebook.com/bark.and.ride.calgary"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded p-2"
+                aria-label="Follow us on Facebook (opens in new tab)"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -4,7 +4,7 @@ import { Car, Target, Calendar, Check } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      title: "Park Transportation",
+      title: "Park Play",
       description: "$35 per ride - Safe, comfortable 2-hour park adventures",
       features: ["House pickup service", "Experienced drivers", "2-hour park visits", "$35 flat rate"],
       icon: Car

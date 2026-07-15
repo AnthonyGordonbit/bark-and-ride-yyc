@@ -18,7 +18,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-background/80 mb-4">
-              Calgary's premier dog park transportation service. Making tails wag since 2025.
+              Calgary's premier dog park play service. Making tails wag since 2025.
             </p>
             <div className="flex space-x-4">
               <a 

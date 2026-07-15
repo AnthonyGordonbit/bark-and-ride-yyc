@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Professional dog park transportation in Calgary. We pick up your furry friend, 
+            Professional dog park play in Calgary. We pick up your furry friend, 
             take them to their favorite park, and bring them home happy and tired.
           </p>
           
@@ -55,7 +55,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-black/20 rounded-2xl blur-xl transform translate-x-2 translate-y-2"></div>
               <img 
                 src={heroImage} 
-                alt="Bark and Ride - Professional Dog Transportation Service" 
+                alt="Bark and Ride - Professional Dog Park Play Service" 
                 className="relative w-full max-w-md h-auto object-contain rounded-2xl transition-all duration-300 hover:scale-105 bg-white/90 backdrop-blur-md"
                 style={{
                   filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4))'

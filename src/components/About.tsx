@@ -9,7 +9,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               We understand that your dog is family. That's why we've created Calgary's most 
-              trusted dog transportation service, ensuring your furry friend gets the exercise 
+              trusted dog play service, ensuring your furry friend gets the exercise 
               and socialization they need while you focus on your busy day.
             </p>
             <div className="space-y-4">

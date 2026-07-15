@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60">
-            © 2025 Bark & Ride YYC. All rights reserved. Made with ❤️ for Calgary's dogs.
+            © 2026 Bark & Ride YYC. All rights reserved. Made with ❤️ for Calgary's dogs.
           </p>
         </div>
       </div>

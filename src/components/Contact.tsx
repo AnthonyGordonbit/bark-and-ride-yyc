@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Service Area</h3>
-                  <p className="text-muted-foreground">Calgary & Surrounding Areas</p>
+                  <p className="text-muted-foreground">Serving NW communities in Calgary</p>
                 </div>
               </div>
               
